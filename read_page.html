@@ -23,18 +23,18 @@
     }
 
     .sen_1-1 {
-      /* background: rgb(40, 177, 28); */
+      /* background: rgb(93, 28, 177); */
       top: 31.5%;
-      right: 8%;
-      width: 38%;
+      right: 12%;
+      width: 31%;
       height: 10%;
     }
 
     .sen_1-2 {
       /* background: rgb(40, 177, 28); */
       top: 45%;
-      right: 7%;
-      width: 39%;
+      right: 9%;
+      width: 36%;
       height: 10%;
     }
 
@@ -49,16 +49,16 @@
     .sen_1-4 {
       /* background: rgb(40, 177, 28); */
       top: 72%;
-      right: 8%;
-      width: 32%;
+      right: 10%;
+      width: 31%;
       height: 10%;
     }
 
     .sen_music_1 {
       /* background: rgb(40, 177, 28); */
       top: 85%;
-      right: 8%;
-      width: 30%;
+      right: 12%;
+      width: 25%;
       height: 6%;
     }
 
@@ -110,7 +110,6 @@
 
     .icon_page1_10 {
       bottom: 0%;
-      right: 46%;
     }
 
     /* 第二頁 */
@@ -237,7 +236,6 @@
 
     .icon_page2_9 {
       bottom: 0%;
-      right: 46.5%;
     }
 
     /* 第三頁 */
@@ -324,7 +322,7 @@
     .sen_music_3 {
       /* background: rgb(11, 151, 206); */
       top: 93%;
-      right: 20%;
+      right: 21%;
       width: 10%;
       height: 5%;
     }
@@ -382,7 +380,6 @@
 
     .icon_page3_11 {
       bottom: 0%;
-      right: 46.2%;
     }
   </style>
   <title>有聲書</title>
@@ -469,58 +466,77 @@
     <div class="flex bg-gray-200 w-full overflow-x-auto xl:p-3" id="content_img_box">
       <div class="w-full h-full shadow-lg flex xl:justify-center">
         <div class="h-full bg-white shadow-2xl">
-          <div class="relative w-full" id="container_img">
+          <div class="relative w-full flex justify-center" id="container_img">
             <!-- 圖片 -->
             <img id="img_page_1" src="photo1.jpg" class="w-full min-h-full p-0 m-0" alt="" />
             <img id="img_page_2" src="photo2.jpg" class="hidden h-full w-full min-h-full p-0 m-0" alt="" />
             <img id="img_page_3" src="photo3.jpg" class="hidden h-full w-full min-h-full p-0 m-0" alt="" />
             <!-- 第一頁 影片位置 -->
-<!--            <div onclick="play_video(`01.第一輯L01 Here we are.mp4`)"></div>-->
-            <img onclick="play_video(`01.第一輯L01 Here we are.mp4`)" src="/assets/video_icon/video_icon_1.png" class="w-10 absolute icon_page1_1 icon_page1" alt="" />
-            <img onclick="play_video(`02.第一輯L01 Here we are 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="w-8 absolute icon_page1_2 icon_page1" alt="" />
-            <img onclick="play_video(`03.第一輯L01 Lets get off the bus.mp4`)" src="/assets/video_icon/video_icon_1.png" class="w-10 absolute icon_page1_3 icon_page1" alt="" />
-            <img onclick="play_video(`04.第一輯L01 Lets get off the bus 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="w-8 absolute icon_page1_4 icon_page1" alt="" />
-            <img onclick="play_video(`05.第一輯L01 One at a time.mp4`)" src="/assets/video_icon/video_icon_1.png" class="w-10 absolute icon_page1_5 icon_page1" alt="" />
-            <img onclick="play_video(`06.第一輯L01 One at a time 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="w-8 absolute icon_page1_6 icon_page1" alt="" />
-            <img onclick="play_video(`07.第一輯L01 No pushing plz.mp4`)" src="/assets/video_icon/video_icon_1.png" class="w-10 absolute icon_page1_7 icon_page1" alt="" />
-            <img onclick="play_video(`08.第一輯L01 No pushing plz  練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="w-8 absolute icon_page1_8 icon_page1" alt="" />
-            <img onclick="play_video(`09.第一輯L01 SONG.mp4`)" src="/assets/video_icon/video_icon_song.png" class="w-15 absolute icon_page1_9 icon_page1" alt="" />
-            <img onclick="play_video(`10.第一輯L01 全.mp4`)" src="/assets/video_icon/video_icon_all.png" class="w-24 absolute icon_page1_10 icon_page1" alt="" />
+            <!--            <div onclick="play_video(`01.第一輯L01 Here we are.mp4`)"></div>-->
+            <img onclick="play_video(`01.第一輯L01 Here we are.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="w-10 absolute icon_page1_1 icon_page1" alt="" />
+            <img onclick="play_video(`02.第一輯L01 Here we are 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="w-8 absolute icon_page1_2 icon_page1" alt="" />
+            <img onclick="play_video(`03.第一輯L01 Lets get off the bus.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="w-10 absolute icon_page1_3 icon_page1" alt="" />
+            <img onclick="play_video(`04.第一輯L01 Lets get off the bus 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="w-8 absolute icon_page1_4 icon_page1" alt="" />
+            <img onclick="play_video(`05.第一輯L01 One at a time.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="w-10 absolute icon_page1_5 icon_page1" alt="" />
+            <img onclick="play_video(`06.第一輯L01 One at a time 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="w-8 absolute icon_page1_6 icon_page1" alt="" />
+            <img onclick="play_video(`07.第一輯L01 No pushing plz.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="w-10 absolute icon_page1_7 icon_page1" alt="" />
+            <img onclick="play_video(`08.第一輯L01 No pushing plz  練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="w-8 absolute icon_page1_8 icon_page1" alt="" />
+            <img onclick="play_video(`09.第一輯L01 SONG.mp4`)" src="/assets/video_icon/video_icon_song.png"
+              class="w-15 absolute icon_page1_9 icon_page1" alt="" />
+            <img onclick="play_video(`10.第一輯L01 全.mp4`)" src="/assets/video_icon/video_icon_all.png"
+              class="w-24 absolute icon_page1_10 icon_page1" alt="" />
 
             <!-- 第二頁 影片位置 -->
-            <img onclick="play_video(`1.初階L01 Good morning.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page2_1 icon_page2"
-              alt="" />
-            <img onclick="play_video(`2.初階L01 Good morning Miss Wang 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page2_2 icon_page2" alt="" />
-            <img onclick="play_video(`3.初階L01 Good morning Sam 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page2_3 icon_page2" alt="" />
-            <img onclick="play_video(`4.初階L01 How are you.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page2_4 icon_page2"
-              alt="" />
-            <img onclick="play_video(`5.初階L01 How are you 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page2_5 icon_page2" alt="" />
-            <img onclick="play_video(`6.初階L01 Im great.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page2_6 icon_page2"
-              alt="" />
-            <img onclick="play_video(`7.初階L01 Im great 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page2_7 icon_page2" alt="" />
-            <img onclick="play_video(`8.初階L01 SONG If you re happy.mp4`)" src="/assets/video_icon/video_icon_song.png" class="hidden w-10 absolute icon_page2_8 icon_page2"
-              alt="" />
-            <img onclick="play_video(`9.初階L01 全.mp4`)" src="/assets/video_icon/video_icon_all.png" class="hidden w-24 absolute icon_page2_9 icon_page2"
-              alt="" />
+            <img onclick="play_video(`1.初階L01 Good morning.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page2_1 icon_page2" alt="" />
+            <img onclick="play_video(`2.初階L01 Good morning Miss Wang 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page2_2 icon_page2" alt="" />
+            <img onclick="play_video(`3.初階L01 Good morning Sam 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page2_3 icon_page2" alt="" />
+            <img onclick="play_video(`4.初階L01 How are you.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page2_4 icon_page2" alt="" />
+            <img onclick="play_video(`5.初階L01 How are you 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page2_5 icon_page2" alt="" />
+            <img onclick="play_video(`6.初階L01 Im great.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page2_6 icon_page2" alt="" />
+            <img onclick="play_video(`7.初階L01 Im great 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page2_7 icon_page2" alt="" />
+            <img onclick="play_video(`8.初階L01 SONG If you re happy.mp4`)" src="/assets/video_icon/video_icon_song.png"
+              class="hidden w-10 absolute icon_page2_8 icon_page2" alt="" />
+            <img onclick="play_video(`9.初階L01 全.mp4`)" src="/assets/video_icon/video_icon_all.png"
+              class="hidden w-24 absolute icon_page2_9 icon_page2" alt="" />
 
             <!-- 第三頁 影片位置 -->
-            <img onclick="play_video(`01. 啟蒙L01 Daddy hug me.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page3_1 icon_page3"
-              alt="" />
-            <img onclick="play_video(`02. 啟蒙L01 Daddy hug me 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page3_2 icon_page3" alt="" />
-            <img onclick="play_video(`03. 啟蒙L01 Be good.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page3_3 icon_page3"
-              alt="" />
-            <img onclick="play_video(`04. 啟蒙L01 Be good 練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page3_4 icon_page3" alt="" />
-            <img onclick="play_video(`05. 啟蒙L01 Bye bye.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page3_5 icon_page3"
-              alt="" />
-            <img onclick="play_video(`06. 啟蒙L01 Bye bye  練習.mp4`)" src="/assets/video_icon/video_icon_2.png" class="hidden w-8 absolute icon_page3_6 icon_page3" alt="" />
-            <img onclick="play_video(`07. 啟蒙L01 Word_Apple.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-8 absolute icon_page3_7 icon_page3" alt="" />
-            <img onclick="play_video(`08. 啟蒙L01 Word_Ant.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-8 absolute icon_page3_8 icon_page3" alt="" />
-            <img onclick="play_video(`09. 啟蒙L01 Chant.mp4`)" src="/assets/video_icon/video_icon_1.png" class="hidden w-10 absolute icon_page3_9 icon_page3"
-              alt="" />
-            <img onclick="play_video(`10. 啟蒙L01 Song_A Big Hug.mp4`)" src="/assets/video_icon/video_icon_song.png" class="hidden w-10 absolute icon_page3_10 icon_page3"
-              alt="" />
-            <img onclick="play_video(`11. 啟蒙L01 全.mp4.mp4`)" src="/assets/video_icon/video_icon_all.png" class="hidden w-24 absolute icon_page3_11 icon_page3"
-              alt="" />
+            <img onclick="play_video(`01. 啟蒙L01 Daddy hug me.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page3_1 icon_page3" alt="" />
+            <img onclick="play_video(`02. 啟蒙L01 Daddy hug me 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page3_2 icon_page3" alt="" />
+            <img onclick="play_video(`03. 啟蒙L01 Be good.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page3_3 icon_page3" alt="" />
+            <img onclick="play_video(`04. 啟蒙L01 Be good 練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page3_4 icon_page3" alt="" />
+            <img onclick="play_video(`05. 啟蒙L01 Bye bye.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page3_5 icon_page3" alt="" />
+            <img onclick="play_video(`06. 啟蒙L01 Bye bye  練習.mp4`)" src="/assets/video_icon/video_icon_2.png"
+              class="hidden w-8 absolute icon_page3_6 icon_page3" alt="" />
+            <img onclick="play_video(`07. 啟蒙L01 Word_Apple.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-8 absolute icon_page3_7 icon_page3" alt="" />
+            <img onclick="play_video(`08. 啟蒙L01 Word_Ant.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-8 absolute icon_page3_8 icon_page3" alt="" />
+            <img onclick="play_video(`09. 啟蒙L01 Chant.mp4`)" src="/assets/video_icon/video_icon_1.png"
+              class="hidden w-10 absolute icon_page3_9 icon_page3" alt="" />
+            <img onclick="play_video(`10. 啟蒙L01 Song_A Big Hug.mp4`)" src="/assets/video_icon/video_icon_song.png"
+              class="hidden w-10 absolute icon_page3_10 icon_page3" alt="" />
+            <img onclick="play_video(`11. 啟蒙L01 全.mp4.mp4`)" src="/assets/video_icon/video_icon_all.png"
+              class="hidden w-24 absolute icon_page3_11 icon_page3" alt="" />
 
 
             <!-- 第一頁 音檔位置 -->
@@ -537,65 +553,65 @@
 
             <!-- 第二頁 GoodMorning -->
             <!-- Lession1 GoodMorning -->
-            <div onclick="playAudio('L1-0.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-0">
+            <div onclick="playAudio('L1-0.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-0">
             </div>
             <!-- GoodMorning Miss Wang -->
-            <div onclick="playAudio('L1-1.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-1">
+            <div onclick="playAudio('L1-1.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-1">
             </div>
             <!-- GoodMorning San -->
-            <div onclick="playAudio('L1-2.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-2">
+            <div onclick="playAudio('L1-2.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-2">
             </div>
             <!-- How are you -->
-            <div onclick="playAudio('L1-3.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-3">
+            <div onclick="playAudio('L1-3.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-3">
             </div>
             <!-- I'm great -->
-            <div onclick="playAudio('L1-4.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-4">
+            <div onclick="playAudio('L1-4.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-4">
             </div>
 
             <!-- GoodMorning Miss Wang -->
-            <div onclick="playAudio('L1-1.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-1_B">
+            <div onclick="playAudio('L1-1.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-1_B">
             </div>
             <!-- GoodMorning San -->
-            <div onclick="playAudio('L1-2.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-2_B">
+            <div onclick="playAudio('L1-2.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-2_B">
             </div>
             <!-- How are you -->
-            <div onclick="playAudio('L1-3.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-3_B">
+            <div onclick="playAudio('L1-3.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-3_B">
             </div>
             <!-- I'm great -->
-            <div onclick="playAudio('L1-4.wav')" class="page_num element_sound_2 absolute opacity-50 sen_2-4_B">
+            <div onclick="playAudio('L1-4.wav')" class="hidden page_num element_sound_2 absolute opacity-50 sen_2-4_B">
             </div>
 
             <!-- 第三頁 Lession1 Hug Me -->
             <!-- Lession1 hug everyday -->
-            <div onclick="playAudio('L1-0.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-0">
+            <div onclick="playAudio('L1-0.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-0">
             </div>
             <!-- daddy hug me -->
-            <div onclick="playAudio('L1-1.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-1">
+            <div onclick="playAudio('L1-1.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-1">
             </div>
             <!-- be good -->
-            <div onclick="playAudio('L1-2.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-2">
+            <div onclick="playAudio('L1-2.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-2">
             </div>
             <!-- bye bye -->
-            <div onclick="playAudio('L1-3.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-3">
+            <div onclick="playAudio('L1-3.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-3">
             </div>
             <!-- apple -->
-            <div onclick="playAudio('L1-4.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-4">
+            <div onclick="playAudio('L1-4.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-4">
             </div>
             <!-- ant -->
-            <div onclick="playAudio('L1-5.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-5">
+            <div onclick="playAudio('L1-5.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-5">
             </div>
             <!-- aaa apples every day -->
-            <div onclick="playAudio('L1-6.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-6">
+            <div onclick="playAudio('L1-6.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-6">
             </div>
 
             <!-- daddy hug me -->
-            <div onclick="playAudio('L1-1.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-1_B">
+            <div onclick="playAudio('L1-1.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-1_B">
             </div>
             <!-- be good -->
-            <div onclick="playAudio('L1-2.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-2_B">
+            <div onclick="playAudio('L1-2.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-2_B">
             </div>
             <!-- bye bye -->
-            <div onclick="playAudio('L1-3.wav')" class="page_num element_sound_3 absolute opacity-50 sen_3-3_B">
+            <div onclick="playAudio('L1-3.wav')" class="hidden page_num element_sound_3 absolute opacity-50 sen_3-3_B">
             </div>
             <!-- music -->
             <!-- /第一頁 歌曲位置 -->
@@ -604,10 +620,11 @@
 
             <!-- 第二頁 歌曲位置 -->
             <div onclick="playAudio(`(歌曲)L1-If you're happy.wav`)"
-              class="element_sound_2 absolute opacity-50 sen_music_2"></div>
+              class="hidden element_sound_2 absolute opacity-50 sen_music_2"></div>
 
             <!-- 第三頁 歌曲位置 -->
-            <div onclick="playAudio(`(歌曲)L1-A Big Hug.wav`)" class="element_sound_3 absolute opacity-50 sen_music_3">
+            <div onclick="playAudio(`(歌曲)L1-A Big Hug.wav`)"
+              class="hidden element_sound_3 absolute opacity-50 sen_music_3">
             </div>
           </div>
           <div id="view_x" class="h-1 bg-red-100 invisible"></div>
@@ -660,11 +677,13 @@
   <!-- The Video Modal -->
   <div id="videoModal" class="modal">
     <!-- Modal content -->
-    <div class="modal-content" id="video_container">
-      <span class="close_modal_content close">&times;</span>
-<!--      <video id="video_container" style="width: 100%" controls>-->
-<!--        <source style="width: 100%" type="video/mp4" />-->
-<!--      </video>-->
+    <div class="modal-content flex justify-center">
+      <div class="w-full" id="video_container">
+        <!--      <video id="video_container" style="width: 100%" controls>-->
+        <!--        <source style="width: 100%" type="video/mp4" />-->
+        <!--      </video>-->
+      </div>
+      <div class="close_modal_content close pl-10">&times;</div>
     </div>
   </div>
 </body>
@@ -751,6 +770,7 @@
 
     let video = $('<video />', {
       id: 'video',
+      class: 'w-full',
       src: fileDir + fileName,
       type: 'video/mp4',
       controls: true
