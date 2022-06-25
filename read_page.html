@@ -1,245 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* 第一頁 */
+      .sen_1-0 {
+        /* background: rgb(28, 38, 177); */
+        top: 15%;
+        right: 8%;
+        width: 32%;
+        height: 12%;
+      }
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <style>
-    /* 第一頁 */
-    .sen_1-0 {
-      /* background: rgb(28, 38, 177); */
-      top: 15%;
-      right: 8%;
-      width: 32%;
-      height: 12%;
-    }
+      .sen_1-1 {
+        /* background: rgb(40, 177, 28); */
+        top: 31.5%;
+        right: 8%;
+        width: 38%;
+        height: 10%;
+      }
 
-    .sen_1-1 {
-      /* background: rgb(40, 177, 28); */
-      top: 31.5%;
-      right: 8%;
-      width: 38%;
-      height: 10%;
-    }
+      .sen_1-2 {
+        /* background: rgb(40, 177, 28); */
+        top: 45%;
+        right: 7%;
+        width: 39%;
+        height: 10%;
+      }
 
-    .sen_1-2 {
-      /* background: rgb(40, 177, 28); */
-      top: 45%;
-      right: 7%;
-      width: 39%;
-      height: 10%;
-    }
+      .sen_1-3 {
+        /* background: rgb(40, 177, 28); */
+        top: 59%;
+        right: 16%;
+        width: 25%;
+        height: 10%;
+      }
 
-    .sen_1-3 {
-      /* background: rgb(40, 177, 28); */
-      top: 59%;
-      right: 16%;
-      width: 25%;
-      height: 10%;
-    }
+      .sen_1-4 {
+        /* background: rgb(40, 177, 28); */
+        top: 72%;
+        right: 8%;
+        width: 32%;
+        height: 10%;
+      }
 
-    .sen_1-4 {
-      /* background: rgb(40, 177, 28); */
-      top: 72%;
-      right: 8%;
-      width: 32%;
-      height: 10%;
-    }
+      .sen_music_1 {
+        /* background: rgb(40, 177, 28); */
+        top: 85%;
+        right: 8%;
+        width: 30%;
+        height: 6%;
+      }
 
-    .sen_music_1 {
-      /* background: rgb(40, 177, 28); */
-      top: 85%;
-      right: 8%;
-      width: 30%;
-      height: 6%;
-    }
+      /* 第二頁 */
+      .sen_2-0 {
+        /* background: rgb(40, 177, 28); */
+        top: 55%;
+        right: 14%;
+        width: 20%;
+        height: 7%;
+      }
 
-    /* 第二頁 */
-    .sen_2-0 {
-      /* background: rgb(40, 177, 28); */
-      top: 55%;
-      right: 14%;
-      width: 20%;
-      height: 7%;
-    }
+      .sen_2-1 {
+        /* background: rgb(40, 177, 28); */
+        top: 7%;
+        left: 18%;
+        width: 20%;
+        height: 12%;
+      }
 
-    .sen_2-1 {
+      .sen_2-2 {
+        /* background: rgb(40, 177, 28); */
+        top: 54.5%;
+        left: 18%;
+        width: 20%;
+        height: 8%;
+      }
 
-      /* background: rgb(40, 177, 28); */
-      top: 7%;
-      left: 18%;
-      width: 20%;
-      height: 12%;
-    }
+      .sen_2-3 {
+        /* background: rgb(40, 177, 28); */
+        top: 63%;
+        left: 18%;
+        width: 20%;
+        height: 5%;
+      }
 
-    .sen_2-2 {
+      .sen_2-4 {
+        /* background: rgb(40, 177, 28); */
+        top: 9.5%;
+        right: 9%;
+        width: 20%;
+        height: 12%;
+      }
 
-      /* background: rgb(40, 177, 28); */
-      top: 54.5%;
-      left: 18%;
-      width: 20%;
-      height: 8%;
-    }
+      .sen_2-1_B {
+        /* background: rgb(11, 151, 206); */
+        top: 65%;
+        right: 10%;
+        width: 30%;
+        height: 7%;
+      }
 
-    .sen_2-3 {
-      /* background: rgb(40, 177, 28); */
-      top: 63%;
-      left: 18%;
-      width: 20%;
-      height: 5%;
-    }
+      .sen_2-2_B {
+        /* background: rgb(11, 151, 206); */
+        top: 73%;
+        right: 16%;
+        width: 28%;
+        height: 6.5%;
+      }
 
-    .sen_2-4 {
-      /* background: rgb(40, 177, 28); */
-      top: 9.5%;
-      right: 9%;
-      width: 20%;
-      height: 12%;
-    }
+      .sen_2-3_B {
+        /* background: rgb(11, 151, 206); */
+        top: 80.5%;
+        right: 18%;
+        width: 20%;
+        height: 4%;
+      }
 
-    .sen_2-1_B {
-      /* background: rgb(11, 151, 206); */
-      top: 65%;
-      right: 10%;
-      width: 30%;
-      height: 7%;
-    }
+      .sen_2-4_B {
+        /* background: rgb(11, 151, 206); */
+        top: 85%;
+        right: 21%;
+        width: 20%;
+        height: 5%;
+      }
 
-    .sen_2-2_B {
-      /* background: rgb(11, 151, 206); */
-      top: 73%;
-      right: 16%;
-      width: 28%;
-      height: 6.5%;
-    }
+      .sen_music_2 {
+        /* background: rgb(11, 151, 206); */
+        top: 91%;
+        right: 12%;
+        width: 25%;
+        height: 5%;
+      }
 
-    .sen_2-3_B {
-      /* background: rgb(11, 151, 206); */
-      top: 80.5%;
-      right: 18%;
-      width: 20%;
-      height: 4%;
-    }
+      /* 第三頁 */
+      .sen_3-0 {
+        /* background: rgb(209, 133, 19); */
+        top: 72%;
+        right: 15%;
+        width: 20%;
+        height: 5%;
+      }
 
-    .sen_2-4_B {
-      /* background: rgb(11, 151, 206); */
-      top: 85%;
-      right: 21%;
-      width: 20%;
-      height: 5%;
-    }
+      .sen_3-1 {
+        /* background: rgb(209, 133, 19); */
+        top: 15%;
+        left: 6%;
+        width: 15%;
+        height: 10%;
+      }
 
-    .sen_music_2 {
-      /* background: rgb(11, 151, 206); */
-      top: 91%;
-      right: 12%;
-      width: 25%;
-      height: 5%;
-    }
+      .sen_3-2 {
+        /* background: rgb(209, 133, 19); */
+        top: 10%;
+        right: 8%;
+        width: 17%;
+        height: 8%;
+      }
 
-    /* 第三頁 */
-    .sen_3-0 {
-      /* background: rgb(209, 133, 19); */
-      top: 72%;
-      right: 15%;
-      width: 20%;
-      height: 5%;
-    }
+      .sen_3-3 {
+        /* background: rgb(209, 133, 19); */
+        top: 22%;
+        right: 29%;
+        width: 17%;
+        height: 10%;
+      }
 
-    .sen_3-1 {
-      /* background: rgb(209, 133, 19); */
-      top: 15%;
-      left: 6%;
-      width: 15%;
-      height: 10%;
-    }
+      .sen_3-4 {
+        /* background: rgb(209, 133, 19); */
+        top: 31%;
+        right: 3.5%;
+        width: 9.5%;
+        height: 14%;
+      }
 
-    .sen_3-2 {
-      /* background: rgb(209, 133, 19); */
-      top: 10%;
-      right: 8%;
-      width: 17%;
-      height: 8%;
-    }
+      .sen_3-5 {
+        /* background: rgb(209, 133, 19); */
+        top: 50.5%;
+        right: 3.5%;
+        width: 9.5%;
+        height: 14%;
+      }
 
-    .sen_3-3 {
-      /* background: rgb(209, 133, 19); */
-      top: 22%;
-      right: 29%;
-      width: 17%;
-      height: 10%;
-    }
+      .sen_3-6 {
+        /* background: rgb(209, 133, 19); */
+        top: 73%;
+        left: 3%;
+        width: 45%;
+        height: 20%;
+      }
 
-    .sen_3-4 {
-      /* background: rgb(209, 133, 19); */
-      top: 31%;
-      right: 3.5%;
-      width: 9.5%;
-      height: 14%;
-    }
+      .sen_3-1_B {
+        /* background: rgb(209, 19, 184); */
+        top: 77.5%;
+        right: 25%;
+        width: 20%;
+        height: 4%;
+      }
 
-    .sen_3-5 {
-      /* background: rgb(209, 133, 19); */
-      top: 50.5%;
-      right: 3.5%;
-      width: 9.5%;
-      height: 14%;
-    }
+      .sen_3-2_B {
+        /* background: rgb(209, 19, 184); */
+        top: 82%;
+        right: 32%;
+        width: 15%;
+        height: 4%;
+      }
 
-    .sen_3-6 {
-      /* background: rgb(209, 133, 19); */
-      top: 73%;
-      left: 3%;
-      width: 45%;
-      height: 20%;
-    }
+      .sen_3-3_B {
+        /* background: rgb(209, 19, 184); */
+        top: 86.5%;
+        right: 31%;
+        width: 15%;
+        height: 4%;
+      }
 
-    .sen_3-1_B {
-      /* background: rgb(209, 19, 184); */
-      top: 77.5%;
-      right: 25%;
-      width: 20%;
-      height: 4%;
-    }
+      .sen_music_3 {
+        /* background: rgb(11, 151, 206); */
+        top: 93%;
+        right: 20%;
+        width: 10%;
+        height: 5%;
+      }
+    </style>
+    <title>有聲書</title>
+  </head>
 
-    .sen_3-2_B {
-      /* background: rgb(209, 19, 184); */
-      top: 82%;
-      right: 32%;
-      width: 15%;
-      height: 4%;
-    }
-
-    .sen_3-3_B {
-      /* background: rgb(209, 19, 184); */
-      top: 86.5%;
-      right: 31%;
-      width: 15%;
-      height: 4%;
-    }
-
-    .sen_music_3 {
-      /* background: rgb(11, 151, 206); */
-      top: 93%;
-      right: 20%;
-      width: 10%;
-      height: 5%;
-    }
-  </style>
-  <title>有聲書</title>
-</head>
-
-<body class="w-full h-screen max-h-max m-0 p-0">
-  <div class="w-full h-full overflow-x">
-    <!-- 測試 -->
-    <!-- <div class="w-full h-10 flex justify-around bg-gray-200 text-2xl">
+  <body class="w-full h-screen max-h-max m-0 p-0">
+    <div class="w-full h-full overflow-x">
+      <!-- 測試 -->
+      <!-- <div class="w-full h-10 flex justify-around bg-gray-200 text-2xl">
       <div class="hidden 2xl:block">2xl</div>
       <div class="hidden xl:block">xl</div>
       <div class="hidden lg:block">lg</div>
@@ -247,489 +251,663 @@
       <div class="hidden sm:block">sm</div>
     </div> -->
 
-    <!-- nav 功能列 -->
-    <div class="w-full h-16">
-      <div class="w-full h-full flex justify-between px-10 py-1">
-        <div class="flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 text-blue-500" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-          </svg>
-          <div class="nav-item p-2 grid content-center">
-            <div
-              class="nav-link font-bold text-blue-500 text-2xl hover:text-gray-700 focus:text-gray-700 pr-3 hidden sm:block">
-              有聲書線上互動平台
-            </div>
-          </div>
-          <div class="nav-item p-2 grid content-center">
-            <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 px-3 hidden md:block"
-              href="#">首頁</a>
-          </div>
-          <div class="nav-item p-2 grid content-center">
-            <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 px-3 hidden md:block"
-              href="#">功能</a>
-          </div>
-        </div>
-        <!-- Right elements -->
-        <div class="flex items-center relative">
-          <!-- Icon -->
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <!-- nav 功能列 -->
+      <div class="w-full h-16">
+        <div class="w-full h-full flex justify-between px-10 py-1">
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12 text-blue-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />
             </svg>
+            <div class="nav-item p-2 grid content-center">
+              <div
+                class="nav-link font-bold text-blue-500 text-2xl hover:text-gray-700 focus:text-gray-700 pr-3 hidden sm:block"
+              >
+                有聲書線上互動平台
+              </div>
+            </div>
+            <div class="nav-item p-2 grid content-center">
+              <a
+                class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 px-3 hidden md:block"
+                href="#"
+                >首頁</a
+              >
+            </div>
+            <div class="nav-item p-2 grid content-center">
+              <a
+                class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 px-3 hidden md:block"
+                href="#"
+                >功能</a
+              >
+            </div>
+          </div>
+          <!-- Right elements -->
+          <div class="flex items-center relative">
+            <!-- Icon -->
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+      </div>
+      <!--/ nav 功能列 -->
+      <!-- nav 功能列 -->
+      <div class="w-full h-16 bg-gray-200 grid content-center pt-2">
+        <div class="flex items-center justify-center content-center">
+          <div class="flex w-full lg:w-96 space-x-2 justify-center pr-5">
+            <button
+              type="button"
+              id="btn_speed_0"
+              class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              慢速
+            </button>
+          </div>
+          <div class="flex w-full lg:w-96 space-x-2 justify-center pr-5">
+            <button
+              type="button"
+              id="btn_speed_1"
+              class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              中英
+            </button>
+          </div>
+          <div class="flex w-full lg:w-96 space-x-2 justify-center">
+            <button
+              type="button"
+              id="btn_speed_2"
+              class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              全英
+            </button>
           </div>
         </div>
-        <!-- Right elements -->
       </div>
-    </div>
-    <!--/ nav 功能列 -->
-    <!-- nav 功能列 -->
-    <div class="w-full h-16 bg-gray-200 grid content-center pt-2">
-      <div class="flex items-center justify-center content-center">
-        <div class="flex w-full lg:w-96 space-x-2 justify-center pr-5">
-          <button type="button" id="btn_speed_0"
-            class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out">
-            慢速
-          </button>
-        </div>
-        <div class="flex w-full lg:w-96 space-x-2 justify-center pr-5">
-          <button type="button" id="btn_speed_1"
-            class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
-            中英
-          </button>
-        </div>
-        <div class="flex w-full lg:w-96 space-x-2 justify-center">
-          <button type="button" id="btn_speed_2"
-            class="w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out">
-            全英
-          </button>
-        </div>
-      </div>
-    </div>
-    <!--/ nav 功能列 -->
-    <!-- 內容 -->
-    <div class="flex bg-gray-200 w-full  overflow-x-auto xl:p-3 " id="content_img_box">
-      <div class="w-full h-full  shadow-lg flex xl:justify-center ">
-        <div class="h-full bg-white shadow-2xl">
-          <div class="relative w-full" id="container_img">
-            <!-- 圖片 -->
-            <img id="img_page_1" src="photo1.jpg" class="w-full min-h-full p-0 m-0" alt="">
-            <img id="img_page_2" src="photo2.jpg" class="hidden h-full w-full min-h-full p-0 m-0" alt="">
-            <img id="img_page_3" src="photo3.jpg" class="hidden h-full w-full min-h-full p-0 m-0" alt="">
+      <!--/ nav 功能列 -->
+      <!-- 內容 -->
+      <div
+        class="flex bg-gray-200 w-full overflow-x-auto xl:p-3"
+        id="content_img_box"
+      >
+        <div class="w-full h-full shadow-lg flex xl:justify-center">
+          <div class="h-full bg-white shadow-2xl">
+            <div class="relative w-full" id="container_img">
+              <!-- 圖片 -->
+              <img
+                id="img_page_1"
+                src="photo1.jpg"
+                class="w-full min-h-full p-0 m-0"
+                alt=""
+              />
+              <img
+                id="img_page_2"
+                src="photo2.jpg"
+                class="hidden h-full w-full min-h-full p-0 m-0"
+                alt=""
+              />
+              <img
+                id="img_page_3"
+                src="photo3.jpg"
+                class="hidden h-full w-full min-h-full p-0 m-0"
+                alt=""
+              />
+              <!-- 第一頁 影片位置 -->
+              <div id="testtt" onclick="play_video(`01.第一輯L01 Here we are.mp4`)"></div>
 
-            <!-- 第一頁 音檔位置 -->
-            <!-- 我們到了 標題 -->
-            <div onclick="playAudio('L1-0.wav')" class="page_num element_sound_1 absolute opacity-50 sen_1-0">
-            </div>
-            <!-- Here we are -->
-            <div onclick="playAudio('L1-1.wav')" class="page_num element_sound_1 absolute opacity-50 sen_1-1">
-            </div>
-            <!-- Let's get off the bus -->
-            <div onclick="playAudio('L1-2.wav')" class="page_num element_sound_1 absolute  opacity-50 sen_1-2">
-            </div>
-            <!-- One at a time -->
-            <div onclick="playAudio('L1-3.wav')" class="page_num element_sound_1 absolute opacity-50 sen_1-3">
-            </div>
-            <!-- No pushing,please. -->
-            <div onclick="playAudio('L1-4.wav')" class="page_num element_sound_1 absolute opacity-50 sen_1-4">
-            </div>
 
-            <!-- 第二頁 GoodMorning -->
-            <!-- Lession1 GoodMorning -->
-            <div onclick="playAudio('L1-0.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-0">
-            </div>
-            <!-- GoodMorning Miss Wang -->
-            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-1">
-            </div>
-            <!-- GoodMorning San -->
-            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-2">
-            </div>
-            <!-- How are you -->
-            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-3">
-            </div>
-            <!-- I'm great -->
-            <div onclick="playAudio('L1-4.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-4">
-            </div>
+              <!-- 第一頁 音檔位置 -->
+              <!-- 我們到了 標題 -->
+              <div
+                onclick="playAudio('L1-0.wav')"
+                class="page_num element_sound_1 absolute opacity-50 sen_1-0"
+              ></div>
+              <!-- Here we are -->
+              <div
+                onclick="playAudio('L1-1.wav')"
+                class="page_num element_sound_1 absolute opacity-50 sen_1-1"
+              ></div>
+              <!-- Let's get off the bus -->
+              <div
+                onclick="playAudio('L1-2.wav')"
+                class="page_num element_sound_1 absolute opacity-50 sen_1-2"
+              ></div>
+              <!-- One at a time -->
+              <div
+                onclick="playAudio('L1-3.wav')"
+                class="page_num element_sound_1 absolute opacity-50 sen_1-3"
+              ></div>
+              <!-- No pushing,please. -->
+              <div
+                onclick="playAudio('L1-4.wav')"
+                class="page_num element_sound_1 absolute opacity-50 sen_1-4"
+              ></div>
 
-            <!-- GoodMorning Miss Wang -->
-            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-1_B">
-            </div>
-            <!-- GoodMorning San -->
-            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-2_B">
-            </div>
-            <!-- How are you -->
-            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-3_B">
-            </div>
-            <!-- I'm great -->
-            <div onclick="playAudio('L1-4.wav')" id="" class="page_num element_sound_2 absolute opacity-50 sen_2-4_B">
-            </div>
+              <!-- 第二頁 GoodMorning -->
+              <!-- Lession1 GoodMorning -->
+              <div
+                onclick="playAudio('L1-0.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-0"
+              ></div>
+              <!-- GoodMorning Miss Wang -->
+              <div
+                onclick="playAudio('L1-1.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-1"
+              ></div>
+              <!-- GoodMorning San -->
+              <div
+                onclick="playAudio('L1-2.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-2"
+              ></div>
+              <!-- How are you -->
+              <div
+                onclick="playAudio('L1-3.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-3"
+              ></div>
+              <!-- I'm great -->
+              <div
+                onclick="playAudio('L1-4.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-4"
+              ></div>
 
-            <!-- 第三頁 Lession1 Hug Me -->
-            <!-- Lession1 hug everyday -->
-            <div onclick="playAudio('L1-0.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-0">
-            </div>
-            <!-- daddy hug me -->
-            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-1">
-            </div>
-            <!-- be good -->
-            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-2">
-            </div>
-            <!-- bye bye -->
-            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-3">
-            </div>
-            <!-- apple -->
-            <div onclick="playAudio('L1-4.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-4">
-            </div>
-            <!-- ant -->
-            <div onclick="playAudio('L1-5.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-5">
-            </div>
-            <!-- aaa apples every day -->
-            <div onclick="playAudio('L1-6.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-6">
-            </div>
+              <!-- GoodMorning Miss Wang -->
+              <div
+                onclick="playAudio('L1-1.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-1_B"
+              ></div>
+              <!-- GoodMorning San -->
+              <div
+                onclick="playAudio('L1-2.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-2_B"
+              ></div>
+              <!-- How are you -->
+              <div
+                onclick="playAudio('L1-3.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-3_B"
+              ></div>
+              <!-- I'm great -->
+              <div
+                onclick="playAudio('L1-4.wav')"
+                id=""
+                class="page_num element_sound_2 absolute opacity-50 sen_2-4_B"
+              ></div>
 
-            <!-- daddy hug me -->
-            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-1_B">
-            </div>
-            <!-- be good -->
-            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-2_B">
-            </div>
-            <!-- bye bye -->
-            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound_3 absolute opacity-50 sen_3-3_B">
-            </div>
-            <!-- music -->
-            <!-- /第一頁 歌曲位置 -->
-            <div onclick="playAudio('(歌曲)L1-Riding the Bus.wav')"
-              class="element_sound_1 absolute opacity-50 sen_music_1 ">
-            </div>
+              <!-- 第三頁 Lession1 Hug Me -->
+              <!-- Lession1 hug everyday -->
+              <div
+                onclick="playAudio('L1-0.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-0"
+              ></div>
+              <!-- daddy hug me -->
+              <div
+                onclick="playAudio('L1-1.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-1"
+              ></div>
+              <!-- be good -->
+              <div
+                onclick="playAudio('L1-2.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-2"
+              ></div>
+              <!-- bye bye -->
+              <div
+                onclick="playAudio('L1-3.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-3"
+              ></div>
+              <!-- apple -->
+              <div
+                onclick="playAudio('L1-4.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-4"
+              ></div>
+              <!-- ant -->
+              <div
+                onclick="playAudio('L1-5.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-5"
+              ></div>
+              <!-- aaa apples every day -->
+              <div
+                onclick="playAudio('L1-6.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-6"
+              ></div>
 
-            <!-- 第二頁 歌曲位置 -->
-            <div onclick="playAudio(`(歌曲)L1-If you're happy.wav`)"
-              class="element_sound_2 absolute opacity-50 sen_music_2 ">
-            </div>
+              <!-- daddy hug me -->
+              <div
+                onclick="playAudio('L1-1.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-1_B"
+              ></div>
+              <!-- be good -->
+              <div
+                onclick="playAudio('L1-2.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-2_B"
+              ></div>
+              <!-- bye bye -->
+              <div
+                onclick="playAudio('L1-3.wav')"
+                id=""
+                class="page_num element_sound_3 absolute opacity-50 sen_3-3_B"
+              ></div>
+              <!-- music -->
+              <!-- /第一頁 歌曲位置 -->
+              <div
+                onclick="playAudio('(歌曲)L1-Riding the Bus.wav')"
+                class="element_sound_1 absolute opacity-50 sen_music_1"
+              ></div>
 
-            <!-- 第三頁 歌曲位置 -->
-            <div onclick="playAudio(`(歌曲)L1-A Big Hug.wav`)" class="element_sound_3 absolute opacity-50 sen_music_3 ">
-            </div>
+              <!-- 第二頁 歌曲位置 -->
+              <div
+                onclick="playAudio(`(歌曲)L1-If you're happy.wav`)"
+                class="element_sound_2 absolute opacity-50 sen_music_2"
+              ></div>
 
+              <!-- 第三頁 歌曲位置 -->
+              <div
+                onclick="playAudio(`(歌曲)L1-A Big Hug.wav`)"
+                class="element_sound_3 absolute opacity-50 sen_music_3"
+              ></div>
+            </div>
+            <div id="view_x" class="h-1 bg-red-100 invisible"></div>
           </div>
-          <div id="view_x" class="h-1 bg-red-100 invisible"></div>
         </div>
       </div>
-    </div>
-    <!-- /內容 -->
+      <!-- /內容 -->
 
-    <!-- 頁碼 -->
-    <div class="w-full p-5">
-      <div class="flex justify-center">
-        <nav aria-label="Page navigation example">
-          <ul class="flex list-style-none" id="page_number">
-            <li class="page-item xl:px-3">
-              <div id="btn_page_back"
-                class="text-gray-200 page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full">
-                上一頁
-              </div>
-            </li>
-            <li class="page-item xl:px-3">
-              <div id="btn_page_1"
-                class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full bg-blue-600 text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md">
-                1
-              </div>
-            </li>
-            <li class="page-item xl:px-3">
-              <div id="btn_page_2"
-                class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none">
-                2
-              </div>
-            </li>
-            <li class="page-item xl:px-3">
-              <div id="btn_page_3"
-                class="page_num cursor-pointer border order page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none">
-                3
-              </div>
-            </li>
-            <li class="page-item xl:px-3">
-              <div id="btn_page_next"
-                class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none">
-                下一頁
-              </div>
-            </li>
-          </ul>
-        </nav>
+      <!-- 頁碼 -->
+      <div class="w-full p-5">
+        <div class="flex justify-center">
+          <nav aria-label="Page navigation example">
+            <ul class="flex list-style-none" id="page_number">
+              <li class="page-item xl:px-3">
+                <div
+                  id="btn_page_back"
+                  class="text-gray-200 page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full"
+                >
+                  上一頁
+                </div>
+              </li>
+              <li class="page-item xl:px-3">
+                <div
+                  id="btn_page_1"
+                  class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full bg-blue-600 text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md"
+                >
+                  1
+                </div>
+              </li>
+              <li class="page-item xl:px-3">
+                <div
+                  id="btn_page_2"
+                  class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                >
+                  2
+                </div>
+              </li>
+              <li class="page-item xl:px-3">
+                <div
+                  id="btn_page_3"
+                  class="page_num cursor-pointer border order page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                >
+                  3
+                </div>
+              </li>
+              <li class="page-item xl:px-3">
+                <div
+                  id="btn_page_next"
+                  class="page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                >
+                  下一頁
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 頁碼 -->
+    </div>
+    <!-- The Video Modal -->
+    <div id="videoModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close_modal_content close">&times;</span>
+        <video
+          id="video_container"
+          style="width: 100%"
+          src="/assets/教學影片/第一輯/01.第一輯L01 Here we are.mp4"
+          controls
+        >
+          <source style="width: 100%" type="video/mp4" />
+        </video>
       </div>
     </div>
-    <!-- 頁碼 -->
-  </div>
-</body>
-<script>
-  // 頁碼style
-  //點了 藍色
-  var clicked_blue =
-    "page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full bg-blue-600 text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md";
-  //沒點 灰色
-  var clicked_gray =
-    "page_num cursor-pointer border order page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none  ";
-  // 上下頁 沒有 灰色
-  var btn_clicked_gray =
-    "text-gray-200 page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full";
-  // 上下頁 還有 黑色
-  var btn_clicked_black =
-    "page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none";
+  </body>
+  <script>
+    // 頁碼style
+    //點了 藍色
+    var clicked_blue =
+      "page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 outline-none transition-all duration-300 rounded-full bg-blue-600 text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md";
+    //沒點 灰色
+    var clicked_gray =
+      "page_num cursor-pointer border order page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none  ";
+    // 上下頁 沒有 灰色
+    var btn_clicked_gray =
+      "text-gray-200 page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full";
+    // 上下頁 還有 黑色
+    var btn_clicked_black =
+      "page_num cursor-pointer border page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none";
 
-  //音檔按鈕 style
-  var clicked_speed_white =
-    "w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out";
-  var clicked_speed_blue =
-    "w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out";
+    //音檔按鈕 style
+    var clicked_speed_white =
+      "w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-100 text-black font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-600 focus:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-lg transition duration-150 ease-in-out";
+    var clicked_speed_blue =
+      "w-full border-4 border-blue-700 shadow-md px-2 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out";
 
-  //所在頁數
-  var page_now = 1;
-  // 目前音檔選擇 0慢速 1中英 2全英
-  var sound_speed = 1; //預設 1中英
+    //所在頁數
+    var page_now = 1;
+    // 目前音檔選擇 0慢速 1中英 2全英
+    var sound_speed = 1; //預設 1中英
 
-  let audio;
+    let audio;
 
-  function playAudio(fileName) {
-    if (!fileName) {
-      return;
-    }
-    if (audio !== undefined) {
-      audio.pause();
-    }
-    let fileDir;
-    if (page_now == 1) {
-      fileDir = "/assets/音源/第一輯/L1/";
-    }
-    if (page_now == 2) {
-      fileDir = "/assets/音源/初階/L1/";
-    }
-    if (page_now == 3) {
-      fileDir = "/assets/音源/啟蒙/L1/";
-    }
-
-
-    let fileType = "(中英)";
-
-    if (fileName.indexOf("歌曲") == -1) {
-      if (sound_speed == 0) {
-        fileType = "(慢速)";
+    function playAudio(fileName) {
+      if (!fileName) {
+        return;
       }
-      if (sound_speed == 1) {
-        fileType = "(中英)";
+      if (audio !== undefined) {
+        audio.pause();
       }
-      if (sound_speed == 2) {
-        fileType = "(全英)";
+      let fileDir;
+      if (page_now == 0) {
+        fileDir = "/assets/音源/第一輯/L1/";
       }
-      fileName = fileDir + fileType + fileName;
-    }
-
-    audio = new Audio(fileName);
-    audio.play();
-  }
-
-  $(document).ready(function () {
-    //迴圈 當 element_sound 被點選 播放對應音檔
-    // $.each($(".element_sound"), function (index, value) { });
-
-    //音檔選擇
-    $("#btn_speed_0").on("click", function () {
-      sound_speed = 0;
-      $("#img_page").attr("src", "photo" + page_now + ".jpg");
-
-      $("#btn_speed_0").removeClass();
-      $("#btn_speed_1").removeClass();
-      $("#btn_speed_2").removeClass();
-
-      $("#btn_speed_0").addClass(clicked_speed_blue);
-      $("#btn_speed_1").addClass(clicked_speed_white);
-      $("#btn_speed_2").addClass(clicked_speed_white);
-    });
-    $("#btn_speed_1").on("click", function () {
-      sound_speed = 1;
-      $("#img_page").attr("src", "photo" + page_now + ".jpg");
-
-      $("#btn_speed_0").removeClass();
-      $("#btn_speed_1").removeClass();
-      $("#btn_speed_2").removeClass();
-
-      $("#btn_speed_0").addClass(clicked_speed_white);
-      $("#btn_speed_1").addClass(clicked_speed_blue);
-      $("#btn_speed_2").addClass(clicked_speed_white);
-    });
-    $("#btn_speed_2").on("click", function () {
-      sound_speed = 2;
-      $("#img_page").attr("src", "photo" + page_now + ".jpg");
-
-      $("#btn_speed_0").removeClass();
-      $("#btn_speed_1").removeClass();
-      $("#btn_speed_2").removeClass();
-
-      $("#btn_speed_0").addClass(clicked_speed_white);
-      $("#btn_speed_1").addClass(clicked_speed_white);
-      $("#btn_speed_2").addClass(clicked_speed_blue);
-    });
-
-
-
-    // 頁碼 btn_page_back
-    $("#btn_page_back").on("click", function () {
-      if (page_now == 2) {
-        $("#btn_page_1").click();
-      } else if (page_now == 3) {
-        $("#btn_page_2").click();
-      };
-    });
-
-    $("#btn_page_next").on("click", function () {
       if (page_now == 1) {
-        $("#btn_page_2").click();
-      } else if (page_now == 2) {
-        $("#btn_page_3").click();
-      };
-    });
-
-    $("#btn_page_1").on("click", function () {
-      page_now = 1;
-      $('.element_sound_1').removeClass('hidden');
-      $('.element_sound_2').addClass('hidden');
-      $('.element_sound_3').addClass('hidden');
-
-      $("#img_page_1").removeClass('hidden');
-      $("#img_page_2").addClass('hidden');
-      $("#img_page_3").addClass('hidden');
-
-      $("#btn_page_back").removeClass();
-      $("#btn_page_back").addClass(btn_clicked_gray);
-
-      $("#btn_page_next").removeClass();
-      $("#btn_page_next").addClass(btn_clicked_black);
-
-      $("#btn_page_1").removeClass();
-      $("#btn_page_2").removeClass();
-      $("#btn_page_3").removeClass();
-
-      $("#btn_page_1").addClass(clicked_blue);
-      $("#btn_page_2").addClass(clicked_gray);
-      $("#btn_page_3").addClass(clicked_gray);
-    });
-    $("#btn_page_2").on("click", function () {
-      page_now = 2;
-      $('.element_sound_1').addClass('hidden');
-      $('.element_sound_2').removeClass('hidden');
-      $('.element_sound_3').addClass('hidden');
-
-      $("#img_page_1").addClass('hidden');
-      $("#img_page_2").removeClass('hidden');
-      $("#img_page_3").addClass('hidden');
-
-      $("#btn_page_back").removeClass();
-      $("#btn_page_back").addClass(btn_clicked_black);
-
-      $("#btn_page_next").removeClass();
-      $("#btn_page_next").addClass(btn_clicked_black);
-
-      $("#btn_page_1").removeClass();
-      $("#btn_page_2").removeClass();
-      $("#btn_page_3").removeClass();
-
-      $("#btn_page_1").addClass(clicked_gray);
-      $("#btn_page_2").addClass(clicked_blue);
-      $("#btn_page_3").addClass(clicked_gray);
-    });
-    $("#btn_page_3").on("click", function () {
-      page_now = 3;
-      $('.element_sound_1').addClass('hidden');
-      $('.element_sound_2').addClass('hidden');
-      $('.element_sound_3').removeClass('hidden');
-
-      $("#img_page_1").addClass('hidden');
-      $("#img_page_2").addClass('hidden');
-      $("#img_page_3").removeClass('hidden');
-
-      $("#btn_page_back").removeClass();
-      $("#btn_page_back").addClass(btn_clicked_black);
-
-      $("#btn_page_next").removeClass();
-      $("#btn_page_next").addClass(btn_clicked_gray);
-
-      $("#btn_page_1").removeClass();
-      $("#btn_page_2").removeClass();
-      $("#btn_page_3").removeClass();
-
-      $("#btn_page_1").addClass(clicked_gray);
-      $("#btn_page_2").addClass(clicked_gray);
-      $("#btn_page_3").addClass(clicked_blue);
-    });
-
-    let str_width; //原圖片寬
-    let str_height; //原圖片高
-
-    //畫面長寬
-    let w_img_view = $(window).width();
-    let h_img_view = $(window).height();
-
-    console.log('畫面長寬:w_img_view: ' + w_img_view + ';' + 'h_img_view: ' + h_img_view);
-
-    var imgSrc = $("#img_page_1").attr("src");
-
-    setImageWidth(imgSrc, function (w_temp, h_temp) {
-      str_width = w_temp;
-      str_height = h_temp;
-      console.log({ width: str_width, height: str_height });
-    });
-
-
-    function setImageWidth(url, callback) {
-      let img = new Image();
-      img.src = url;
-      // 如果圖片被快取，則直接返回快取資料
-      if (img.complete) {
-        callback(img.width, img.height);
-      } else {
-        // 完全載入完畢的事件
-        img.onload = function () {
-          callback(img.width, img.height);
-        };
+        fileDir = "/assets/音源/初階/L1/";
       }
-      console.log('get');
+      if (page_now == 2) {
+        fileDir = "/assets/音源/啟蒙/L1/";
+      }
 
-      //將取得的參數更改至
-      changeImageWidth();
+      let fileType = "(中英)";
+
+      if (fileName.indexOf("歌曲") == -1) {
+        if (sound_speed == 0) {
+          fileType = "(慢速)";
+        }
+        if (sound_speed == 1) {
+          fileType = "(中英)";
+        }
+        if (sound_speed == 2) {
+          fileType = "(全英)";
+        }
+        fileName = fileDir + fileType + fileName;
+      }
+
+      audio = new Audio(fileName);
+      audio.play();
     }
 
-    function changeImageWidth() {
-      let img_proportion; //現在寬度
-      //得出現在寬度
-      img_proportion = (str_width * h_img_view) / str_height;
-      if (w_img_view < 540) {
-        str_width = str_width * 0.6;
-        console.log('w_img_view < 540')
-        // $("#img_page_1").css("height", str_height);
-        $("#container_img").css("width", str_width);
-        $("#content_img_box").removeClass('h-full');
+    // 播放影片
+    function play_video(fileName) {
+      let current_page = page_now;
+      let fileDir = "";
 
-      } else {
-        $("#img_page_1").addClass('h-full');
-        $("#container_img").addClass('h-full');
-        $("#content_img_box").addClass('h-full');
+      if (current_page == 0) {
+        fileDir = "/assets/教學影片/第一輯/";
+      }
+      if (current_page == 1) {
+        fileDir = "/assets/教學影片/初階/";
+      }
+      if (current_page == 2) {
+        fileDir = "/assets/教學影片/啟蒙/";
+      }
+      console.log(fileDir + fileName);
 
-        console.log(img_proportion);
-        console.log('set');
-        $("#view_x").css("width", img_proportion);
-      };
+      $("#video_container")
+        .find("source")
+        .attr("src", fileDir + fileName.trim());
 
-    };
+      $("#videoModal").removeClass("hidden");
+      $("#videoModal").addClass("block");
+    }
 
-    //測試用
-    $('#btn_page_3').click();
-    //測試用
-  }
-  );
-</script>
+    $(document).ready(function () {
+      $(".close_modal_content").on("click", function () {
+        $("#videoModal").removeClass("block");
+        $("#videoModal").addClass("hidden");
+      });
 
+      //迴圈 當 element_sound 被點選 播放對應音檔
+      // $.each($(".element_sound"), function (index, value) { });
+
+      //音檔選擇
+      $("#btn_speed_0").on("click", function () {
+        sound_speed = 0;
+        $("#img_page").attr("src", "photo" + page_now + ".jpg");
+
+        $("#btn_speed_0").removeClass();
+        $("#btn_speed_1").removeClass();
+        $("#btn_speed_2").removeClass();
+
+        $("#btn_speed_0").addClass(clicked_speed_blue);
+        $("#btn_speed_1").addClass(clicked_speed_white);
+        $("#btn_speed_2").addClass(clicked_speed_white);
+      });
+      $("#btn_speed_1").on("click", function () {
+        sound_speed = 1;
+        $("#img_page").attr("src", "photo" + page_now + ".jpg");
+
+        $("#btn_speed_0").removeClass();
+        $("#btn_speed_1").removeClass();
+        $("#btn_speed_2").removeClass();
+
+        $("#btn_speed_0").addClass(clicked_speed_white);
+        $("#btn_speed_1").addClass(clicked_speed_blue);
+        $("#btn_speed_2").addClass(clicked_speed_white);
+      });
+      $("#btn_speed_2").on("click", function () {
+        sound_speed = 2;
+        $("#img_page").attr("src", "photo" + page_now + ".jpg");
+
+        $("#btn_speed_0").removeClass();
+        $("#btn_speed_1").removeClass();
+        $("#btn_speed_2").removeClass();
+
+        $("#btn_speed_0").addClass(clicked_speed_white);
+        $("#btn_speed_1").addClass(clicked_speed_white);
+        $("#btn_speed_2").addClass(clicked_speed_blue);
+      });
+
+      // 頁碼 btn_page_back
+      $("#btn_page_back").on("click", function () {
+        if (page_now == 2) {
+          $("#btn_page_1").click();
+        } else if (page_now == 3) {
+          $("#btn_page_2").click();
+        }
+      });
+
+      $("#btn_page_next").on("click", function () {
+        if (page_now == 1) {
+          $("#btn_page_2").click();
+        } else if (page_now == 2) {
+          $("#btn_page_3").click();
+        }
+      });
+
+      $("#btn_page_1").on("click", function () {
+        page_now = 1;
+        $(".element_sound_1").removeClass("hidden");
+        $(".element_sound_2").addClass("hidden");
+        $(".element_sound_3").addClass("hidden");
+
+        $("#img_page_1").removeClass("hidden");
+        $("#img_page_2").addClass("hidden");
+        $("#img_page_3").addClass("hidden");
+
+        $("#btn_page_back").removeClass();
+        $("#btn_page_back").addClass(btn_clicked_gray);
+
+        $("#btn_page_next").removeClass();
+        $("#btn_page_next").addClass(btn_clicked_black);
+
+        $("#btn_page_1").removeClass();
+        $("#btn_page_2").removeClass();
+        $("#btn_page_3").removeClass();
+
+        $("#btn_page_1").addClass(clicked_blue);
+        $("#btn_page_2").addClass(clicked_gray);
+        $("#btn_page_3").addClass(clicked_gray);
+      });
+      $("#btn_page_2").on("click", function () {
+        page_now = 2;
+        $(".element_sound_1").addClass("hidden");
+        $(".element_sound_2").removeClass("hidden");
+        $(".element_sound_3").addClass("hidden");
+
+        $("#img_page_1").addClass("hidden");
+        $("#img_page_2").removeClass("hidden");
+        $("#img_page_3").addClass("hidden");
+
+        $("#btn_page_back").removeClass();
+        $("#btn_page_back").addClass(btn_clicked_black);
+
+        $("#btn_page_next").removeClass();
+        $("#btn_page_next").addClass(btn_clicked_black);
+
+        $("#btn_page_1").removeClass();
+        $("#btn_page_2").removeClass();
+        $("#btn_page_3").removeClass();
+
+        $("#btn_page_1").addClass(clicked_gray);
+        $("#btn_page_2").addClass(clicked_blue);
+        $("#btn_page_3").addClass(clicked_gray);
+      });
+      $("#btn_page_3").on("click", function () {
+        page_now = 3;
+        $(".element_sound_1").addClass("hidden");
+        $(".element_sound_2").addClass("hidden");
+        $(".element_sound_3").removeClass("hidden");
+
+        $("#img_page_1").addClass("hidden");
+        $("#img_page_2").addClass("hidden");
+        $("#img_page_3").removeClass("hidden");
+
+        $("#btn_page_back").removeClass();
+        $("#btn_page_back").addClass(btn_clicked_black);
+
+        $("#btn_page_next").removeClass();
+        $("#btn_page_next").addClass(btn_clicked_gray);
+
+        $("#btn_page_1").removeClass();
+        $("#btn_page_2").removeClass();
+        $("#btn_page_3").removeClass();
+
+        $("#btn_page_1").addClass(clicked_gray);
+        $("#btn_page_2").addClass(clicked_gray);
+        $("#btn_page_3").addClass(clicked_blue);
+      });
+
+      let str_width; //原圖片寬
+      let str_height; //原圖片高
+
+      //畫面長寬
+      let w_img_view = $(window).width();
+      let h_img_view = $(window).height();
+
+      console.log(
+        "畫面長寬:w_img_view: " + w_img_view + ";" + "h_img_view: " + h_img_view
+      );
+
+      var imgSrc = $("#img_page_1").attr("src");
+
+      setImageWidth(imgSrc, function (w_temp, h_temp) {
+        str_width = w_temp;
+        str_height = h_temp;
+        console.log({ width: str_width, height: str_height });
+      });
+
+      function setImageWidth(url, callback) {
+        let img = new Image();
+        img.src = url;
+        // 如果圖片被快取，則直接返回快取資料
+        if (img.complete) {
+          callback(img.width, img.height);
+        } else {
+          // 完全載入完畢的事件
+          img.onload = function () {
+            callback(img.width, img.height);
+          };
+        }
+        console.log("get");
+
+        //將取得的參數更改至
+        changeImageWidth();
+      }
+
+      function changeImageWidth() {
+        let img_proportion; //現在寬度
+        //得出現在寬度
+        img_proportion = (str_width * h_img_view) / str_height;
+        if (w_img_view < 540) {
+          str_width = str_width * 0.6;
+          console.log("w_img_view < 540");
+          // $("#img_page_1").css("height", str_height);
+          $("#container_img").css("width", str_width);
+          $("#content_img_box").removeClass("h-full");
+        } else {
+          $("#img_page_1").addClass("h-full");
+          $("#container_img").addClass("h-full");
+          $("#content_img_box").addClass("h-full");
+
+          console.log(img_proportion);
+          console.log("set");
+          $("#view_x").css("width", img_proportion);
+        }
+      }
+
+      //測試用
+      $("#btn_page_3").click();
+      //測試用
+    });
+  </script>
 </html>
