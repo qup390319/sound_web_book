@@ -704,13 +704,13 @@
       audio.pause();
     }
     let fileDir;
-    if (page_now == 0) {
+    if (page_now == 1) {
       fileDir = "/assets/音源/第一輯/L1/";
     }
-    if (page_now == 1) {
+    if (page_now == 2) {
       fileDir = "/assets/音源/初階/L1/";
     }
-    if (page_now == 2) {
+    if (page_now == 3) {
       fileDir = "/assets/音源/啟蒙/L1/";
     }
 
@@ -728,7 +728,7 @@
       }
       fileName = fileDir + fileType + fileName;
     }
-
+    console.log(fileName);
     audio = new Audio(fileName);
     audio.play();
   }
