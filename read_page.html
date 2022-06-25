@@ -788,6 +788,11 @@
     let current_page = page_now;
     let fileDir = "";
 
+    //開啟影片時將音檔停止
+    if (audio !== undefined) {
+      audio.pause();
+    }
+
     if (current_page == 1) {
       fileDir = "/assets/教學影片/第一輯/";
     }
