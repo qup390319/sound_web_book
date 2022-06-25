@@ -152,25 +152,84 @@
 
             <!-- 第一頁 音檔位置 -->
             <!-- 我們到了 標題 -->
-            <div onclick="playAudio('L1-0.wav')" id="sen_phone_1-0" class="element_sound absolute opacity-50 sen_1-0">
+            <div onclick="playAudio('L1-0.wav')" id="sen_phone_1-0" class="page_num element_sound absolute opacity-50 sen_1-0">
             </div>
             <!-- Here we are -->
-            <div onclick="playAudio('L1-1.wav')" id="sen_phone_1-1" class="element_sound absolute opacity-50 sen_1-1">
+            <div onclick="playAudio('L1-1.wav')" id="sen_phone_1-1" class="page_num element_sound absolute opacity-50 sen_1-1">
             </div>
             <!-- Let's get off the bus -->
-            <div onclick="playAudio('L1-2.wav')" id="sen_phone_1-2" class="element_sound absolute  opacity-50 sen_1-2">
+            <div onclick="playAudio('L1-2.wav')" id="sen_phone_1-2" class="page_num element_sound absolute  opacity-50 sen_1-2">
             </div>
             <!-- One at a time -->
-            <div onclick="playAudio('L1-3.wav')" id="sen_phone_1-3" class="element_sound absolute opacity-50 sen_1-3">
+            <div onclick="playAudio('L1-3.wav')" id="sen_phone_1-3" class="page_num element_sound absolute opacity-50 sen_1-3">
             </div>
             <!-- No pushing,please. -->
-            <div onclick="playAudio('L1-4.wav')" id="sen_phone_1-4" class="element_sound absolute opacity-50 sen_1-4">
+            <div onclick="playAudio('L1-4.wav')" id="sen_phone_1-4" class="page_num element_sound absolute opacity-50 sen_1-4">
             </div>
+
+            <!-- 第二頁 GoodMorning -->
+            <!-- Lession1 GoodMorning -->
+            <div onclick="playAudio('L1-0.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- GoodMorning Miss Wang -->
+            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- GoodMorning San -->
+            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- How are you -->
+            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- I'm great -->
+            <div onclick="playAudio('L1-4.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            
+            <!-- 第三頁 Lession1 Hug Me -->
+            <!-- Lession1 hug everyday -->
+            <div onclick="playAudio('L1-0.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- daddy hug me -->
+            <div onclick="playAudio('L1-1.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- be good -->
+            <div onclick="playAudio('L1-2.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- bye bye -->
+            <div onclick="playAudio('L1-3.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- apple -->
+            <div onclick="playAudio('L1-4.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- ant -->
+            <div onclick="playAudio('L1-5.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            <!-- aaa apples every day -->
+            <div onclick="playAudio('L1-6.wav')" id="" class="page_num element_sound absolute opacity-50">
+            </div>
+            
+            
+
+
+
+
+
+
             <!-- music -->
+            <!-- /第一頁 歌曲位置 -->
             <div onclick="playAudio('(歌曲)L1-Riding the Bus.wav')" id="sen_phone_music"
               class="element_sound absolute opacity-50 sen_music ">
             </div>
-            <!-- /第一頁 音檔位置 -->
+            
+            <!-- 第二頁 歌曲位置 -->
+            <div onclick="playAudio(`(歌曲)L1-If you're happy.wav`)" id="sen_phone_music"
+              class="element_sound absolute opacity-50 sen_music ">
+            </div>
+
+            <!-- 第三頁 歌曲位置 -->
+            <div onclick="playAudio(`(歌曲)L1-A Big Hug.wav`)" id="sen_phone_music"
+            class="element_sound absolute opacity-50 sen_music ">
+            </div>
+
           </div>
           <div id="view_x" class="h-1 bg-red-100 invisible"></div>
         </div>
@@ -255,6 +314,17 @@
     if (audio !== undefined) {
       audio.pause();
     }
+    let fileDir;
+    if(page_now == 1){
+      fileDir = "/assets/音源/初階/L1/";
+    }
+    if(page_now == 2){
+      fileDir = "/assets/音源/第一輯/L1/";
+    }
+    if(page_now == 3){
+      fileDir = "/assets/音源/啟蒙/L1/";
+    }
+
 
     let fileType = "(中英)";
 
@@ -268,7 +338,7 @@
       if (sound_speed == 2) {
         fileType = "(全英)";
       }
-      fileName = fileType + fileName;
+      fileName = fileDir + fileType + fileName;
     }
 
     audio = new Audio(fileName);
